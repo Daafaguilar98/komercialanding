@@ -1,0 +1,99 @@
+.pricing{
+}
+.pricing_header{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-top: 30px;
+}
+.pricing_header h3{
+	font-size: 30px;
+	font-weight: 300;
+}
+.pricing_header p{
+	padding-top: 10px;
+	font-size: 18px;
+}
+.pricing_content{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}
+.pricing_content_free, .pricing_content_plus, .pricing_content_pro{
+	width: 290px;
+	height: 380px;
+	padding: 20px;
+	background-color: #EEE;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.pricing_content_plus{
+	background-color: #3EE5AC;
+	color: #FFF;
+	height: 400px;
+	z-index: 2;
+	box-shadow: 0 0 15px 2px rgba(0,0,0,0.2)
+}
+.pricing_item_title{
+	text-align: center;
+	margin: 10px;
+}
+.pricing_item_price{
+	margin: 10px 0;
+}
+.pricing_content_plus, .pricing_content_plus .pricing_item_title, .pricing_content_plus ul li, .pricing_content_plus ul li .material-icons{
+	color: #FFF;
+}
+.pricing_content ul{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+.pricing_content ul li{
+	display: flex;
+	align-items: center;
+	margin: 5px 0;
+	font-size: 15px;
+}
+.pricing_content ul li .material-icons{
+	font-size: 16px;
+	margin-right: 5px;
+	font-weight: bold;
+}
+.pricing_item_action{
+	margin-top: 40px; 
+	border-style: none;
+	padding: 10px 20px;
+	background-color: #3EE5AC;
+	color: #FFF;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.pricing_item_action:hover{
+	box-shadow: 0 0 12px 1px rgba(0,0,0,0.15);
+	transform: scale(1.05);
+}
+.pricing_content_plus .pricing_item_action{
+	background-color: #FFF;
+	color: #3EE5AC;
+}
+@media only screen and (max-width: 750px) {
+	.pricing_header h3{
+		font-size: 44px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.pricing_header h3{
+		font-size: 38px;
+	}
+	.pricing_header p{
+		display: none;
+	}
+}
