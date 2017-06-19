@@ -65,6 +65,18 @@
 	}
 }
 
+@media only screen and (max-width: 650px) {
+	.startToBuy_item .text{
+		display: none;
+	}
+	.startToBuy_item_image{
+		margin-top: 15px
+	}
+	.startToBuy_content hr{
+		margin-top: 23px
+	}
+}
+
 @media only screen and (max-width: 550px) {
 	.startToBuy_header h3{
 		font-size: 38px;

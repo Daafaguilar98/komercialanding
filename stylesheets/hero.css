@@ -99,6 +99,7 @@
 @media only screen and (max-width: 750px) {
 	.hero{
 		padding: 0px 15px !important;
+		height: 450px;
 	}
 	.hero_header{
 		display: flex;
@@ -127,7 +128,17 @@
 }
 @media (max-width: 550px) {
 	.hero{
-		height: 500px;
+		height: 400px;
+	}
+	.hero_header {
+		flex-direction: row;
+		padding: 0px 5px;
+	}
+	.navigation_items li{
+		display: none;
+	}
+	.navigation_items li:last-child{
+		display: flex;
 	}
 	.hero_background{
 		height: 500px;

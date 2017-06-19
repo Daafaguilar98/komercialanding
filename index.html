@@ -184,22 +184,52 @@
 			            <div class="swiper-slide">
 			            	<div class="pricing_item">
 								<h3 class="pricing_item_title">Gratis</h3>
+								<p class="pricing_item_price"><strong>$</strong>0</p>
+								<ul>
+									<li><i class="material-icons">check</i>Hasta 10 productos</li>
+									<li><i class="material-icons">check</i>Subdominio</li>
+									<li><i class="material-icons">check</i>1 Cuenta de usuario</li>
+									<li><i class="material-icons">check</i>2 Plantillas de diseño</li>
+									<li><i class="material-icons">check</i>Capacitaciones online</li>
+								</ul>
+								<button class="pricing_item_action">Comprar plan</button>
 							</div>
 			            </div>
 			            <div class="swiper-slide">
 			            	<div class="pricing_item">
 								<h3 class="pricing_item_title">Plus</h3>
+								<p class="pricing_item_price"><strong>$</strong>720.000/Año</p>
+								<ul>
+									<li><i class="material-icons">check</i>300 Productos</li>
+									<li><i class="material-icons">check</i>Subdominio</li>
+									<li><i class="material-icons">check</i>3 Cuenta de usuario</li>
+									<li><i class="material-icons">check</i>5 Plantillas de diseño</li>
+									<li><i class="material-icons">check</i>Capacitaciones online</li>
+									<li><i class="material-icons">check</i>Estadisticas avanzadas</li>
+								</ul>
+								<button class="pricing_item_action">Comprar plan</button>
 							</div>
 			            </div>
 			            <div class="swiper-slide">
 			            	<div class="pricing_item">
 								<h3 class="pricing_item_title">Pro</h3>
+								<p class="pricing_item_price"><strong>$</strong>720.000/Año</p>
+								<ul>
+									<li><i class="material-icons">check</i>500 Productos</li>
+									<li><i class="material-icons">check</i>Dominio</li>
+									<li><i class="material-icons">check</i>5 Cuenta de usuario</li>
+									<li><i class="material-icons">check</i>10 Plantillas de diseño</li>
+									<li><i class="material-icons">check</i>Capacitaciones online</li>
+									<li><i class="material-icons">check</i>Integracion pasarela de pagos</li>
+									<li><i class="material-icons">check</i>Correo corporativo</li>
+								</ul>
+								<button class="pricing_item_action">Comprar plan</button>
 							</div>
 			            </div>
 			        </div>
 			        <!-- Add Arrows -->
-			        <!-- <div class="swiper-button-next"></div>
-			        <div class="swiper-button-prev"></div> -->
+			        <div class="swiper-button-next"></div>
+			        <div class="swiper-button-prev"></div>
 			    </div>
 			</div>
 		</section>
@@ -224,7 +254,6 @@
 						<li><i class="material-icons">check</i>Posicionamiento en buscadores</li>
 						<li><i class="material-icons">check</i>Fotos y videos por producto</li>
 					</ul>
-					<button class="pricing_item_action">Comprar plan</button>
 				</div>
 				<div class="better_features">
 					<div class="feature">
@@ -270,15 +299,15 @@
 		          	<p class="text"><i class="material-icons">phone_iphone</i>312 343 12 34</p>
 		          	<p class="text"><i class="material-icons">location_on</i>Parquesoft, Villavicencio - Meta</p>
 		        </div>
-		        <div class="contact_content_form">
+		        <form class="contact_content_form">
 		          	<h3 class="contact_content_title subtitle">CONTÁCTANOS</h3>
 				    <input type="text" id="formnombre" placeholder='Nombre'>
 				    <input type="text" id="formciudad" placeholder="Ciudad">
 			        <input type="number" id="formtelefono" placeholder="Telefono">
 			       	<input type="email" id="formcorreo" placeholder="Correo">
 		          	<textarea id='formcomentario' placeholder='Escribe tu mensaje'></textarea>
-		        	<button class="action actionContact">Enviar mensaje</button>
-		      	</div>
+		        	<input class="action actionContact" value="Enviar mensaje">
+		      	</form>
 		    </div>
 		</section>
 
@@ -304,20 +333,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.0/js/swiper.min.js"></script>
 	<script>
 	    var swiper = new Swiper('.swiper-container', {
-	        /*nextButton: '.swiper-button-next',
-        	prevButton: '.swiper-button-prev',*/
+	        nextButton: '.swiper-button-next',
+        	prevButton: '.swiper-button-prev',
         	centeredSlides: true,
-	        slidesPerView: 3,
+	        slidesPerView: 1,
 	        paginationClickable: true,
-	        effect: 'coverflow',
-	        spaceBetween: 0,
-	        coverflow: {
-	            rotate: -50,
-	            stretch: 0,
-	            depth: 100,
-	            modifier: 1,
-	            slideShadows : false
-        	}
+	        spaceBetween: 0
 	    });
     </script>
 </body>

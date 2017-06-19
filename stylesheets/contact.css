@@ -121,9 +121,6 @@
         .formContainer {
           height: 65%;
         }
-        .subtitle {
-          display: none;
-        }
         .contact_content2 .contact_content2_support {
           width: 50%;
         }
@@ -138,12 +135,6 @@
         }
       }
       @media only screen and (max-width: 450px) {
-        .title {
-          font-size: 26px;
-        }
-        .inputContainer, textarea {
-          width: 90%;
-        }
         .contact_content2 {
           -ms-flex-direction: column !important;
           -webkit-flex-direction: column !important;

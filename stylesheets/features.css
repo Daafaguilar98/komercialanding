@@ -97,9 +97,14 @@
 @media only screen and (max-width: 750px) {
 	.features_container{
 		padding: 30px 10px;
+		justify-content: center;
 	}
 	.features_container .pricing_content_all{
-		width: 200px;
+		width: 80%;
+		height: inherit;
+	}
+	.better_features{
+		display: none;
 	}
 	.features_header h3{
 		font-size: 44px;
