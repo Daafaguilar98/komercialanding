@@ -1,25 +1,34 @@
 .hero{
-	height: 800px;
-	padding: 0px 100px;
+	height: 550px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
 }
 .hero_background{
 	position: absolute;
 	top: 0;
-	right: 0;
 	max-width: 2000px;
 	width: 100vw;
 	height: 800px;
 	background-image: url("http://komercia.co/padmin/images/fondolanding.jpg");
 	background-size: cover;
-	background-position: center center;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
 	z-index: -1;
 }
 .hero_header{
-	width: 100%;
+	width: 85%;
 	display: flex;
 	justify-content: space-between;
 	padding: 0px 50px;
+	background-color: #FFF;
+	box-shadow: 0 1px 5px 1px rgba(0,0,0,0.2);
+	position: fixed;
+	z-index: 3;
+	margin-top: 10px;
 }
 .header_logo{
 	height: 60px;
@@ -41,7 +50,6 @@
 	list-style: none;
 }
 .navigation_items_item a{
-	height: 100%;
 	margin: 0px 10px;
 	display: flex;
 	align-items: center;
@@ -52,7 +60,8 @@
 .hero_content{
 	display: flex;
 	flex-direction: column;
-	padding-top: 100px; 
+	align-items: flex-start;
+	padding-top: 160px; 
 }
 .hero_content h2{
 	max-width: 560px;
@@ -73,14 +82,14 @@
 	font-size: 12px;
 	margin: 10px 0px 10px 0px;
 }
-
-
-
-@media (min-width: 1800px) {
-	.hero_background{
-		left: calc(50% - 960px);
-		right: initial;
-	}
+.hero_content_callToAction{
+	display: flex;
+	box-shadow: 0 0 5px 1px rgba(14, 54, 0, 0.2);
+}
+.hero_content_callToAction input{
+	padding: 10px;
+	width: 210px;
+	border: 1px solid #2DBE60;
 }
 @media (max-width: 1000px){
 	.hero{
@@ -99,11 +108,21 @@
 		justify-content: center;
 	}
 	.hero_content{
-		padding-top: 50px; 
+		margin: 0px;
+		padding: 170px 0 0 0; 
+	}
+	.hero_content_callToAction{
+		width: 100%;
 	}
 	.hero_content h2{
 		font-size: 26px;
 		margin-bottom: 40px; 
+	}
+}
+@media (max-width: 600px) {
+	.hero_header{
+		width: 100%;
+		margin-top: 0px;
 	}
 }
 @media (max-width: 550px) {
@@ -116,4 +135,7 @@
 	.hero_content p{
 		display: none;
 	}
+}
+@media (max-width: 500px) {
+
 }

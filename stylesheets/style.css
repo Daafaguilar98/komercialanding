@@ -3,20 +3,17 @@ html, *, *:before, *:after {
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
-	/*color: #4a4a4a;*/
+  outline: none;
 }
-/*@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot);
-  src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
-    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-}*/
+
+.container{
+  max-width: 1600px;
+  width: 100%;
+  display: flex;
+  padding: 0px 100px;
+  margin: 0 auto;
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -48,11 +45,10 @@ main{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+  color: rgba(0, 23, 65, 0.82);
 }
 section{
-	max-width: 1600px;
 	width: 100%;
-	
 }
 .thirdSection{
 	background-color: gray;
@@ -60,12 +56,26 @@ section{
 .fourthSection{
 	background-color: yellow;
 }
-.action{
-  margin-top: 40px; 
-  border-style: none;
-  padding: 10px 20px;
-  background-color: #3EE5AC;
-  color: #FFF;
-  cursor: pointer;
-  transition: 0.3s;
+.subtitle{
+  font-size: 15px;
+}
+.text{
+  font-size: 14px;
+}
+.detail{
+  font-size: 13px;
+  font-weight: 200;
+}
+.c4880DF{ 
+  color: #4880DF;
+}
+
+.cEF253C{ /* Rojo Komercia */
+  background-color: #EF253C;
+}
+
+@media (max-width: 800px){
+  .container{
+    overflow: hidden;
+  }
 }

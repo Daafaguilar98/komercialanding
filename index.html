@@ -20,6 +20,40 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/pricing.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/contact.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.0/css/swiper.min.css" />
+    <style type="text/css">
+	    .swiper-container {
+	        width: 100%;
+	        height: 400px;
+	        margin: 20px auto;
+	        overflow: hidden;
+	    }
+	    .swiper-slide {
+	        text-align: center;
+	        font-size: 18px;
+	        background: #fff;
+	        width: 100%;
+	        /* Center slide text vertically */
+	        display: -webkit-box;
+	        display: -ms-flexbox;
+	        display: -webkit-flex;
+	        display: flex;
+	        -webkit-box-pack: center;
+	        -ms-flex-pack: center;
+	        -webkit-justify-content: center;
+	        justify-content: center;
+	        -webkit-box-align: center;
+	        -ms-flex-align: center;
+	        -webkit-align-items: center;
+	        align-items: center;
+	    }
+	    .swiper-slide:nth-child(2n) {
+	        width: 100%;
+	    }
+	    .swiper-slide:nth-child(3n) {
+	        width: 100%;
+	    }
+    </style>
 </head>
 <body>
 	<main>
@@ -33,50 +67,72 @@
 				<nav class="header_navigation">
 					<ul class="navigation_items">
 						<li class="navigation_items_item">
-							<a href="">CARACTERISTICAS</a>
+							<a href="#pricing">Precios</a>
 						</li>
 						<li class="navigation_items_item">
-							<a href="">CONTACTO</a>
+							<a href="#features">Caracteristicas</a>
 						</li>
 						<li class="navigation_items_item">
-							<a href="" class="action">INICIAR SESIÓN</a>
+							<a href="#contact">Contacto</a>
+						</li>
+						<li class="navigation_items_item">
+							<a href="" class="action actionLogin">Iniciar Sesión</a>
 						</li>
 					</ul>
 				</nav>
 			</header>
-			<div class="hero_content">
-				<h2>Vende por internet desde tu propia tienda online<span>.</span></h2>
+			<div class="hero_content container">
+				<h1 class="title">Vende por internet desde tu propia tienda online<span>.</span></h1>
 				<p>Empieza a vender tus productos en línea, en solo minutos tu tienda estará 	abierta para millones de compradores en internet.</p>
-				<a href="" class="actionCreateStore">
-					<i class="material-icons">shopping_cart</i>
-					CREA TU TIENDA GRATIS
-				</a>
+				<div class="hero_content_callToAction">
+					<input type="text" placeholder="Nombre de tu tienda">
+					<button class="action actionCreateStore">CREA TU TIENDA</button>
+				</div>
 				<span>Prueba <strong>Komercia</strong> totalmente gratis durante el tiempo que quieras.</span>
 			</div>
 		</section>
+
 		<section class="startToBuy">
 			<div class="startToBuy_header">
-				<h3>Empieza a vender</h3>
+				<h2 class="title">Empieza a vender</h2>
 				<p>Su negocio necesita que lo encuentren, lo contacten y le compren.
 				Es increíblemente fácil y rápido empezar a vender por internet.</p>
 			</div>
-			<div class="startToBuy_content">
-			</div>
-		</section>
-		<section class="createStore">
-			<div class="createStore_container">
-				<div class="createStore_content">
-					<h3>MILES DE CLIENTES PARA TUS PRODUCTOS</h3>
-					<p>Empieza hoy, abre tu tienda en solo minutos con planes a la medida de tu negocio, da a conocer tus productos, mantén contacto con clientes reales y cierra ventas en pocos pasos.<br>¡Toma el control de tu empresa!</p>
-					<a href="" class="actionCreateStore2">Crear mi tienda</a>
+			<div class="startToBuy_content container">
+				<hr>
+				<div class="startToBuy_item">
+					<h3 class="subtitle c4880DF">Elige un plan</h3>
+					<p class="text">Hay un plan perfecto para</br> la medida de tu negocio</p>
+					<div class="startToBuy_item_image">
+						<img src="images/business.png">
+					</div>
 				</div>
-				<div class="createStore_video">
-					<video></video>
+				<div class="startToBuy_item">
+					<h3 class="subtitle">Crea tu tienda online</h3>
+					<p class="text">Agrega tus productos, datos de tu empresa, elige opciones de pagos y envios, y personalizala</p>
+					<div class="startToBuy_item_image">
+						<img src="images/check.png">
+					</div>
+				</div>
+				<div class="startToBuy_item">
+					<h3 class="subtitle c4880DF">Tu primera venta</h3>
+					<p class="text">Concreta pago, envio y empieza</br> a ganar dinero por tus ventas</p>
+					<div class="startToBuy_item_image">
+						<img src="images/cart.png">
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="pricing">
+		<section class="createStore">
+			<div class="createStore_content container">
+					<video width="700" height="auto" controls poster="images/komercia.jpg">
+						<source src="komercia.mp4" type="video/mp4">
+					</video>
+			</div>
+		</section>
+
+		<section class="pricing" id="pricing">
 			<div class="pricing_header">
 				<h3>LOS PLANES QUE TENEMOS PARA TI</h3>
 				<p>Haz crecer tu negocio con las herramientas más poderosas de internet.</p>
@@ -122,9 +178,33 @@
 						<button class="pricing_item_action">Comprar plan</button>
 					</div>
 			</div>
+			<div class="pricing_content mobile">
+				<div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide">
+			            	<div class="pricing_item">
+								<h3 class="pricing_item_title">Gratis</h3>
+							</div>
+			            </div>
+			            <div class="swiper-slide">
+			            	<div class="pricing_item">
+								<h3 class="pricing_item_title">Plus</h3>
+							</div>
+			            </div>
+			            <div class="swiper-slide">
+			            	<div class="pricing_item">
+								<h3 class="pricing_item_title">Pro</h3>
+							</div>
+			            </div>
+			        </div>
+			        <!-- Add Arrows -->
+			        <!-- <div class="swiper-button-next"></div>
+			        <div class="swiper-button-prev"></div> -->
+			    </div>
+			</div>
 		</section>
 
-		<section class="features">
+		<section class="features" id="features">
 			<div class="features_container">
 				<span class="effect_diagonal"></span>
 				<div class="pricing_content_all">
@@ -138,106 +218,107 @@
 						<li><i class="material-icons">check</i>Integracón a redes sociales</li>
 						<li><i class="material-icons">check</i>Geolocalización</li>
 						<li><i class="material-icons">check</i>Estadísticas básicas</li>
-						<li><i class="material-icons">check</i>Responsive web desing</li>
 						<li><i class="material-icons">check</i>Base de datos de clientes</li>
 						<li><i class="material-icons">check</i>Carrito de compras</li>
 						<li><i class="material-icons">check</i>Notificaciones al email</li>
-						<li><i class="material-icons">check</i>Navegación súper áǵil</li>
 						<li><i class="material-icons">check</i>Posicionamiento en buscadores</li>
 						<li><i class="material-icons">check</i>Fotos y videos por producto</li>
 					</ul>
 					<button class="pricing_item_action">Comprar plan</button>
 				</div>
-				<div>
-					<div>
-						<img src="">
-						<h3></h3>
-						<p></p>
+				<div class="better_features">
+					<div class="feature">
+						<img src="images/box.png">
+						<h3 class="subtitle">Gestión de inventario</h3>
+						<p class="text">Ingresa tus productos y manten tu inventario online, consulta y actualiza cuando quieras desde cualquier lugar.</p>
 					</div>
-					<div>
-						<img src="">
-						<h3></h3>
-						<p></p>
+					<div class="feature">
+						<img src="images/responsive.png">
+						<h3 class="subtitle">Resposive Web</h3>
+						<p class="text">Tus clientes visitaran tu tienda desde su movil, tablet u ordenador de escritorio.</p>
 					</div>
-					<div>
-						<img src="">
-						<h3></h3>
-						<p></p>
+					<div class="feature">
+						<img src="images/social.png">
+						<h3 class="subtitle">Redes Sociales</h3>
+						<p class="text">Integra tus redes sociales con tu sitio web, genera visitas para tu tienda y comparte tus productos.</p>
 					</div>
-					<div>
-						<img src="">
-						<h3></h3>
-						<p></p>
+					<div class="feature">
+						<img src="images/location.png">
+						<h3 class="subtitle">Geolocalización</h3>
+						<p class="text">Integramos google maps a tu tienda para que tus clientes ubiquen tus puntos de venta fisicos y te visiten.</p>
 					</div>
-					<div>
-						<img src="">
-						<h3></h3>
-						<p></p>
+					<div class="feature">
+						<img src="images/edit.png">
+						<h3 class="subtitle">Diseño personalizado</h3>
+						<p class="text">Tu tienda debe ser unica, como tu. Podras modificar el diseño increiblemente facil y rapido.</p>
 					</div>
-					<div>
-						<img src="">
-						<h3></h3>
-						<p></p>
+					<div class="feature">
+						<img src="images/envelope.png">
+						<h3 class="subtitle">Buzon de contacto</h3>
+						<p class="text">Tus clientes van a querer contactarte e intercambiar mensajes contigo para concretar una venta.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="contact">
-		    <div class="contact_content">
-		        <div class="contact_content_header">
-		          	<h3 class="contact_content_title">CONTÁCTANOS</h3>
-		          	<p class="contact_content_subtitle">Completa el siguiente formulario con tus datos, queremos saber tus inquietudes, dudas y recomendaciones para Komercia. Nuestro equipo se pondrá en contacto.</p>
+		<section class="contact" id="contact">
+			<div class="contact_content container">	
+		        <div class="contact_support">
+		        	<h3>Ponte en contacto</h3>
+		          	<p class="text">Estamos dispuestos hablar contigo para</br> resolver cualquier duda e inquietud.</p>
+		          	<p class="text"><i class="material-icons">email</i>contacto@komercia.co</p>
+		          	<p class="text"><i class="material-icons">phone_iphone</i>312 343 12 34</p>
+		          	<p class="text"><i class="material-icons">location_on</i>Parquesoft, Villavicencio - Meta</p>
 		        </div>
 		        <div class="contact_content_form">
-		        	<div class="multiInput">
-				        <div class="inputContainer">
-				          <input type="text" id="formnombre" placeholder='Nombre'>
-				          <img src="http://komercia.co/padmin/images/chat.png"></img>
-				        </div>
-				        <div class="inputContainer">
-				          <input type="text" id="formciudad" placeholder="Ciudad">
-				          <img src="http://komercia.co/padmin/images/boxlanding.png" ></img>
-				        </div>
-		        	</div>
-		        	<div class="multiInput">
-				          <div class="inputContainer">
-				            <input type="number" id="formtelefono" placeholder="Telefono">
-				            <img src="http://komercia.co/padmin/images/phone.png"></img>
-				          </div>
-				          <div class="inputContainer">
-				            <input type="email" id="formcorreo" placeholder="Correo">
-				            <img src="http://komercia.co/padmin/images/email.png"></img>
-				          </div>
-		        	</div>
-		          <textarea id='formcomentario' placeholder='Escribe tu mensaje'></textarea>
-		        </div>
-		        	<div class="btn layout horizontal center center-justified" on-tap='_sendContact'>Enviar mensaje</div>
+		          	<h3 class="contact_content_title subtitle">CONTÁCTANOS</h3>
+				    <input type="text" id="formnombre" placeholder='Nombre'>
+				    <input type="text" id="formciudad" placeholder="Ciudad">
+			        <input type="number" id="formtelefono" placeholder="Telefono">
+			       	<input type="email" id="formcorreo" placeholder="Correo">
+		          	<textarea id='formcomentario' placeholder='Escribe tu mensaje'></textarea>
+		        	<button class="action actionContact">Enviar mensaje</button>
 		      	</div>
-
-		      	<div class="contact_content2">
-			        <div class="contact_content2_support">
-			          <p class="first">Atención a clientes</p>
-			          <p class="second">Llámanos en cualquier momento <br> Teléfono: 312 343 12 34 <br> Email: contacto@komercia.co</p>
-			        </div>
-			        <div class="contact_content2_foster">
-			          <img class="fosterLogo" src="http://komercia.co/padmin/images/logofoster.png"></img>
-			          <span class="second">Komercia es desarrollado por el equipo de FosterApps S.A.S.</span>
-			          <a href="http://www.fosterapps.com" target="_blank">www.fosterapps.com</a>
-			        </div>
-			    </div>
+		    </div>
 		</section>
+
 		<footer class="footer">
-			<div class="footer_social">
-	    		<!--<img src="../../images/facebook.png"></img>
-	      		<img src="../../images/instagram.png"></img>
-	      		<img src="../../images/youtube.png"></img>-->
-	    	</div>
-	    	<span class="footer_first">Hecho con  
-	      		<!--<img src="../../images/heart.png"></img>-->
-	    		en Colombia para el mundo</span>
-	    	<span class="footer_second">Komercia 2017 © Todos los derechos reservados</span>
+			<div class="footer_content container">
+				<div class="footer_first">
+					<img src="http://komercia.co/padmin/images/logofoster.png">
+					<p class="text">Komercia es desarrollado por el equipo de FosterApps S.A.S.</p>
+					<a href="http://www.fosterapps.com" target="_blanck"><strong>www.fosterapps.com</strong></a>
+				</div>
+				<div class="footer_social">
+					<a href="https://www.facebook.com/KomerciaWeb/" target="_blanck"><img src="images/facebook.svg"></a>
+					<a href="https://www.youtube.com/channel/UCrdslJeTIswf2dk4wO_lKJA" target="_blanck"><img src="images/youtube.svg"></a>
+					<a href="https://www.instagram.com/komercia/" target="_blanck"><img src="images/instagram.svg" target="_blanck"></a>
+				</div>
+				<div class="footer_last">
+					<p class="detail">Komercia 2017 © Todos los derechos reservados</p>
+				</div>
+			</div>
 		</footer>
+
 	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.0/js/swiper.min.js"></script>
+	<script>
+	    var swiper = new Swiper('.swiper-container', {
+	        /*nextButton: '.swiper-button-next',
+        	prevButton: '.swiper-button-prev',*/
+        	centeredSlides: true,
+	        slidesPerView: 3,
+	        paginationClickable: true,
+	        effect: 'coverflow',
+	        spaceBetween: 0,
+	        coverflow: {
+	            rotate: -50,
+	            stretch: 0,
+	            depth: 100,
+	            modifier: 1,
+	            slideShadows : false
+        	}
+	    });
+    </script>
 </body>
 </html>
